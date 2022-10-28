@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     GameObject scorePanel;
 
+    [SerializeField] GameObject newHighScore;
+
+    [SerializeField] GameObject recentHighScore;
+
     [SerializeField]
     GameObject grass;
 
@@ -38,11 +42,18 @@ public class GameManager : MonoBehaviour
 
     TMP_Text gameOverText;
 
+    [SerializeField] TMP_Text gameOverTextHighScore;
+
+    [SerializeField] TMP_Text NewHighScoreText;
+
+    private int highScore = 0;
+
     private void Start()
     {
         //Game Over Panel
         gameOverPanel.SetActive(false);
         gameOverText = gameOverPanel.GetComponentInChildren<TMP_Text>();
+        highScore = PlayerPrefs.GetInt("highScore");
 
         //Belakang
         for (int z = minZPos; z <= 0; z++)
@@ -89,6 +100,24 @@ public class GameManager : MonoBehaviour
     void ShowGameOverPanel()
     {
         gameOverText.text = "YOUR SCORE : " + player.MaxTravel;  
+
+        if (player.MaxTravel > highScore)
+        {
+            PlayerPrefs.SetInt("highScore", player.MaxTravel);
+        }
+
+        if (player.MaxTravel > highScore)
+        {
+            NewHighScoreText.text = "NEW HIGHSCORE : " + player.MaxTravel;
+            newHighScore.SetActive(true);
+            recentHighScore.SetActive(false);
+        }
+        else
+        {
+            gameOverTextHighScore.text = "HIGHSCORE : " + highScore;
+            newHighScore.SetActive(false);
+        }
+
         scorePanel.SetActive(false);
         gameOverPanel.SetActive(true);
     }
