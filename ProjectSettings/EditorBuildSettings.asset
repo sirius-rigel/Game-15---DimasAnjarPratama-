@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Tugas Project/Golf/Scenes/MainMenu.unity
+    guid: a41bbfb76f542b64e8fcd1ec09ebdfff
+  - enabled: 1
+    path: Assets/Tugas Project/Golf/Scenes/Level1.unity
+    guid: 17c877492acb540428c3bf7cf768900d
+  - enabled: 1
+    path: Assets/Tugas Project/Golf/Scenes/Level2.unity
+    guid: f7ec504465d40a648b4605c86d8c35a7
+  - enabled: 1
+    path: Assets/Tugas Project/Golf/Scenes/Level3.unity
+    guid: 324fe2ccbe6993b4a8d0bbffb66bbc88
+  - enabled: 1
+    path: Assets/Tugas Project/Golf/Scenes/LoadingProgress.unity
+    guid: 602ed747087406141837cbd4d25a7078
   m_configObjects: {}

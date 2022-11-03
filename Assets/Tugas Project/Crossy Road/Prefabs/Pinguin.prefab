@@ -945,9 +945,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff3ff205792dd542989687e56e2a9a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stepText: {fileID: 0}
   dieParticles: {fileID: 4479077747081789210}
   moveDuration: 0.2
   jumpHeight: 0.5
+  maxTravel: 0
+  currentTravel: 0
 --- !u!54 &5219462184282018261
 Rigidbody:
   m_ObjectHideFlags: 0
