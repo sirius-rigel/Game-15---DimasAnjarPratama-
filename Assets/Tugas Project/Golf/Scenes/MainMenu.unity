@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 952848247}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager3, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -519,7 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 952848248}
-  - component: {fileID: 952848247}
+  - component: {fileID: 952848249}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -527,18 +527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &952848247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952848246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c81d879a4e8575e4f8c3a2b0ae2d6b0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &952848248
 Transform:
   m_ObjectHideFlags: 0
@@ -554,6 +542,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &952848249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952848246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f652a825d28109047a1ac8854c3e1fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1109143593
 GameObject:
   m_ObjectHideFlags: 0
